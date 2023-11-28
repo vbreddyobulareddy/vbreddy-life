@@ -38,7 +38,7 @@ const StartupSegment = () => {
                 </a>
                 <a
                   className="btn m-2"
-                  href="https://github.com/vbreddyobulareddy/vbreddy-cloud-api"
+                  href="https://github.com/vbreddyobulareddy/vbreddy-life"
                   target="_blank"
                 >
                   Github: Next.JS v14, repo
