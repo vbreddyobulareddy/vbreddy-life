@@ -47,7 +47,11 @@ const ExperienceSegment = () => {
                   className="font-eurostile w-[40vw] h-16 border-spacing-2 border-2 flex justify-center items-center m-1"
                   key={`backend_skills_${idx}`}
                 >
-                  <a className="btn btn-link no-underline text-[#000] text-[16px] md:text-[24px]">
+                  <a
+                    className="btn btn-link no-underline text-[#000] text-[16px] md:text-[24px]"
+                    href={entity.url}
+                    target="_blank"
+                  >
                     <div className="flex flex-col items-center justify-center">
                       <div>{entity.companyName}</div>
                       <div className="badge bg-[#121c24] text-white mt-1">
