@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "eurostile";
+  src: url("/fonts/eurostile-cufonfonts-webfont/eurostile.woff");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("/fonts/Patrick_Hand/PatrickHand-Regular.ttf");
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "quickpen";
+  src: url("/fonts/quick-pen/Trial\ by\ Cupcakes\ -\ Quickpen.otf");
+}
+.home-title {
+  font-family: eurostile, sans-serif;
+  font-weight: 800;
+  line-height: 1.125;
+  color: #141c3a;
 }
