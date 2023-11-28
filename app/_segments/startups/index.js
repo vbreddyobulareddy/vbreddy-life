@@ -31,17 +31,17 @@ const StartupSegment = () => {
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <a
                   className="btn m-2"
-                  href="https://github.com/vbreddyobulareddy/vbreddy-cloud-api"
-                  target="_blank"
-                >
-                  Github: Express-GraphQL, repo
-                </a>
-                <a
-                  className="btn m-2"
                   href="https://github.com/vbreddyobulareddy/vbreddy-life"
                   target="_blank"
                 >
-                  Github: Next.JS v14, repo
+                  App Repo: Next.JS(v14) + React.JS + Apollo-Client
+                </a>
+                <a
+                  className="btn m-2"
+                  href="https://github.com/vbreddyobulareddy/vbreddy-cloud-api"
+                  target="_blank"
+                >
+                  App Repo: Express + Express-GraphQL + Google Cloud SQL
                 </a>
               </div>
               <p className="text-[1rem] font-patrickhand m-1 text-center">

@@ -3,8 +3,8 @@ import LetsConnectComponent from "./components/lets-connect";
 
 export default function Page({ params }) {
   return (
-    <section className="bg-[#cdcccc] h-screen p-4">
-      <div className="flex justify-center w-full h-full">
+    <section className="bg-[#cdcccc] w-full h-full">
+      <div className="flex justify-center w-full h-full p-4">
         <div className="container  w-full pt-4 pb-4">
           <div className="card lg:card-side bg-base-100 border-t-2 shadow-xl">
             <figure>

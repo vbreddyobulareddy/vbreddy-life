@@ -76,16 +76,23 @@ const LetsConnectComponent = () => {
         />
       </div>
       <div className="form-control w-full m-2">
-        <button
-          className="btn btn-primary"
-          disabled={
-            !formik.isValid ||
-            Object.keys(formik.touched).length === 0 ||
-            Object.keys(formik.errors).length > 0
-          }
-        >
-          Submit
-        </button>
+        <div className="flex justify-around w-full">
+          <div className="w-full">
+            <a className="btn bg-[#6c757d] hover:text-[#000] border-[#6c757d] w-1/2 text-white" href="/">
+              Cancel
+            </a>
+          </div>
+          <button
+            className="btn btn-primary w-1/2"
+            disabled={
+              !formik.isValid ||
+              Object.keys(formik.touched).length === 0 ||
+              Object.keys(formik.errors).length > 0
+            }
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </>
   );
