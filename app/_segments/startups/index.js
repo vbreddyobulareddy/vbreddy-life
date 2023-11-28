@@ -26,7 +26,7 @@ const StartupSegment = () => {
               </div>
               <div className="w-1/2 h-2 border-t-2 m-4" />
               <p className="text-[1rem] font-patrickhand m-4 text-center">
-                This portal is powered with Next.JS(v14) + React.JS UI and GraphQL restful service of Express.JS, Express-GraphQL libraries.
+                This portal is powered with Next.JS(v14) + React.JS UI and GraphQL restful service via Express.JS, Express-GraphQL libraries.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <a
