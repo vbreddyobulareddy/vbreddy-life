@@ -24,12 +24,12 @@ const ResumeDownloadComponent = () => {
     Object.keys(formik.errors).length > 0;
   return (
     <>
-      <div className="flex justify-center mt-4 pt-4 w-full">
+      <div className="flex justify-center mt-4 pt-4 w-full dark:bg-[#fff] dark:text-[#121c24]">
         <div className="join md:w-1/2">
           <input
             className={`input input-bordered join-item w-full ${
               formik?.errors?.email ? "border-[#dc3545]" : ""
-            }`}
+            }  dark:bg-[#fff] dark:text-[#121c24]`}
             placeholder="Enter your email"
             id="email"
             name="email"
@@ -39,7 +39,7 @@ const ResumeDownloadComponent = () => {
           />
           <button
             disabled={isInvalid}
-            className="btn btn-primary join-item rounded-r-full"
+            className="btn btn-primary join-item rounded-r-full dark:text-[#fff]"
           >
             Resume Download
           </button>

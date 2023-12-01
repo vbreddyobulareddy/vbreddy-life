@@ -1,12 +1,11 @@
 import LetsConnectComponent from "./components/lets-connect";
 
-
 export default function Page({ params }) {
   return (
     <section className="bg-[#cdcccc] w-full h-full">
       <div className="flex justify-center w-full h-full p-4">
         <div className="container  w-full pt-4 pb-4">
-          <div className="card lg:card-side bg-base-100 border-t-2 shadow-xl">
+          <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure>
               <img
                 src="/profile/letsConnect.png"
@@ -15,28 +14,18 @@ export default function Page({ params }) {
               />
             </figure>
             <div className="card-body">
-              <div className="h-full flex flex-col items-end justify-center w-full">
-                <div className="form-control w-full m-2">
-                  <p className="font-patrickhand text-[1rem]">
-                    Whether you have an{" "}
-                    <span className="font-eurostile text-[1rem]">
-                      opportunity
-                    </span>
-                    , require{" "}
-                    <span className="font-eurostile text-[1rem]">
-                      mentorship
-                    </span>
-                    , or just want to{" "}
-                    <span className="font-eurostile text-[1rem]">
-                      say hello,{" "}
-                    </span>
-                    I love to invite you.
-                  </p>
-                  <p className="font-patrickhand text-[1rem]">
+              <div className="flex flex-col justify-center items-center w-full">
+                <div className="font-eurostile text-lg">Let's Connect</div>
+                <div className="flex justify-center h-2 w-1/2 border-t-2"></div>
+              </div>
+
+              <div className="flex flex-col items-end justify-center w-full">
+                <div className="form-control w-full">
+                  <p className="font-patrickhand text-xl m-4">
+                    Whether you have an job opportunity for me, require
+                    mentorship or just want to say hello, I love to invite you.
                     Please share your details or reach me @
-                    <a className="font-eurostile text-[1rem] btn btn-link">
-                      vbreddy.obulareddy@gmail.com
-                    </a>
+                    vbreddy.obulareddy@gmail.com
                   </p>
                 </div>
                 <LetsConnectComponent />

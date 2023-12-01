@@ -10,19 +10,19 @@ const StartupSegment = () => {
               <p className="text-[2rem] font-medium m-4">My...leisure time</p>
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <a
-                  className="btn btn-primary m-2 text-white"
+                  className="btn btn-primary m-2 text-white md:w-1/4"
                   href="https://medium.com/@obulareddyveera"
                   target="_blank"
                 >
-                  medium/@obulareddyveera
+                  Blog: medium/@obulareddyveera
                 </a>
-                <a
+                {/* <a
                   className="btn bg-[#BC4A3C] hover:bg-[#ab473a] text-white m-2"
                   href="https://medium.com/@obulareddyveera"
                   target="_blank"
                 >
                   web-app -- PropertyBricks
-                </a>
+                </a> */}
               </div>
               <div className="w-1/2 h-2 border-t-2 m-4" />
               <p className="text-[1rem] font-patrickhand m-4 text-center">
@@ -45,7 +45,7 @@ const StartupSegment = () => {
                 </a>
               </div>
               <p className="text-[1rem] font-patrickhand m-1 text-center">
-                The portal is deployed with <span className="text-[1.5rem]">Google Cloud Run</span> container.
+                This portal is deployed with <span className="text-[1.5rem]">Google Cloud Run</span> container.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <a

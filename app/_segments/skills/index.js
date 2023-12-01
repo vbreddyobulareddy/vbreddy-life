@@ -6,8 +6,8 @@ import ResumeDownloadComponent from "./components/resumeDownload";
 const SkillsSegment = () => {
   return (
     <>
-      <section className="p-4 mt-[-10rem] w-full">
-        <div className="card w-full bg-base-100 shadow-xl">
+      <section className="p-4 mt-[-10rem] w-full dark:bg-[#fff] dark:text-[#121c24]">
+        <div className="card w-full bg-base-100 shadow-xl dark:bg-[#fff] dark:text-[#121c24]">
           <div className="card-body">
             <div className="w-full flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">

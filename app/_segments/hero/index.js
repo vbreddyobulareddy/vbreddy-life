@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroSegment(props) {
   return (
     <>
-      <section>
+      <section className="dark:bg-[#fff] dark:text-[#121c24]">
         <div className="container mx-auto">
           <div className="pt-4 flex flex-col items-center justify-center m-4">
             <h1 className="home-title text-[3rem] md:text-[4rem]">
@@ -17,7 +17,7 @@ export default function HeroSegment(props) {
         </div>
         <div className="flex flex-col items-center justify-center">
           <img src="/profile/workSpaceWhite.png" />
-          <div className=" bg-[#cdcccc] font-eurostile pt-[2rem] text-center w-full h-fit mb-10 pb-24">
+          <div className="bg-[#cdcccc] dark:bg-[#cdcccc] font-eurostile pt-[2rem] text-center w-full h-fit mb-10 pb-24">
             <div className="container mx-auto text-center m-6 p-2">
               <h1 className="text-[24px] font-extrabold">
                 Hi, I'm VBReddy. Nice to meet you.

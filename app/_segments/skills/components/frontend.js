@@ -3,7 +3,7 @@ import React from "react";
 const FrontendSkills = () => {
   return (
     <>
-      <div className="flex flex-col p-4 w-full">
+      <div className="flex flex-col p-4 w-full dark:bg-[#fff] dark:text-[#121c24]">
         <div className="flex flex-col items-center justify-center">
           <div>
             <img src="/profile/frontend_ui.png" className="w-28 h-28" />
@@ -137,7 +137,7 @@ const FrontendSkills = () => {
           ].map((rec) => {
             return (
               <div
-                className="flex flex-wrap justify-start"
+                className="flex flex-wrap justify-start dark:bg-[#fff] dark:text-[#121c24]"
                 key={rec.group.title}
               >
                 <h3 className={rec.group.className}>{rec.group.title}</h3>

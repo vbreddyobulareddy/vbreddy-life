@@ -4,7 +4,7 @@ import React from "react";
 const ProfileNav = () => {
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 dark:bg-[#fff] dark:text-[#121c24]">
         <div className="navbar-center">
           <div className="flex flex-col">
             <div>

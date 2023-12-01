@@ -3,7 +3,7 @@ import React from "react";
 const BackendSkills = () => {
   return (
     <>
-      <div className="flex flex-col p-4 w-full">
+      <div className="flex flex-col p-4 w-full dark:bg-[#fff] dark:text-[#121c24]">
         <div className="flex flex-col items-center justify-center">
           <div>
             <img src="/profile/backend_api.png" className="w-28 h-28" />

@@ -8,7 +8,7 @@ const ExperienceSegment = () => {
   }
   return (
     <>
-      <section className="m-4 p-4">
+      <section className="m-4 p-4 dark:bg-[#fff] dark:text-[#121c24]">
         <div className="flex justify-center mt-4 pt-4">
           <h2 className="font-eurostile text-[36px]">
             I have collaborated with some awesome companies:
@@ -44,7 +44,7 @@ const ExperienceSegment = () => {
             return (
               <>
                 <div
-                  className="font-eurostile w-[40vw] h-16 border-spacing-2 border-2 flex justify-center items-center m-1"
+                  className="font-eurostile w-full md:w-[40vw] h-16 border-spacing-2 border-2 flex justify-center items-center m-1"
                   key={`backend_skills_${idx}`}
                 >
                   <a

@@ -11,7 +11,9 @@
     "builddesc": "gcloud builds describe 106f06b9-a027-4a92-aaec-9bcaa18a056a > build_desc.log"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.7",
     "formik": "^2.4.5",
+    "graphql": "^16.8.1",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
