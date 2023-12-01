@@ -25,7 +25,7 @@ const LetsConnectComponent = () => {
   });
   return (
     <>
-      <div className="form-control w-full m-2">
+      <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="name"
           class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
@@ -51,7 +51,7 @@ const LetsConnectComponent = () => {
           </span>
         </label>
       </div>
-      <div className="form-control w-full m-2">
+      <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="email"
           class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
@@ -77,7 +77,7 @@ const LetsConnectComponent = () => {
           </span>
         </label>
       </div>
-      <div className="form-control w-full m-2">
+      <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="mobile"
           class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
@@ -103,7 +103,7 @@ const LetsConnectComponent = () => {
           </span>
         </label>
       </div>
-      <div className="form-control w-full m-2">
+      <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="context"
           class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
@@ -128,18 +128,18 @@ const LetsConnectComponent = () => {
           </span>
         </label>
       </div>
-      <div className="form-control w-full m-2">
+      <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <div className="flex justify-around w-full">
           <div className="w-full">
             <a
-              className="btn bg-[#6c757d] hover:text-[#000] border-[#6c757d] w-1/2 text-white"
+              className="btn bg-[#6c757d] hover:text-[#000] dark:hover:text-[#fff] border-[#6c757d] w-1/2 text-white"
               href="/"
             >
               Cancel
             </a>
           </div>
           <button
-            className="btn btn-primary w-1/2"
+            className="btn btn-primary w-1/2 dark:disabled:text-[#fff] dark:text-[#fff] dark:hover:text-[#fff]"
             disabled={
               !formik.isValid ||
               Object.keys(formik.touched).length === 0 ||

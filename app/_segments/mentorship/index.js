@@ -4,7 +4,7 @@ import React from "react";
 const MentorshipSegment = () => {
   return (
     <>
-      <section className="font-eurostile">
+      <section className="font-eurostile dark:bg-[#fff] dark:text-[#121c24]">
         <div className=" flex justify-center">
           <div className="container bg-[#121c24] text-white shadow-xl">
             <div className="w-full flex flex-row">

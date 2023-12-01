@@ -2,10 +2,10 @@ import LetsConnectComponent from "./components/lets-connect";
 
 export default function Page({ params }) {
   return (
-    <section className="bg-[#cdcccc] w-full h-full">
+    <section className="bg-[#cdcccc] w-full h-full dark:bg-[#cdcccc] dark:text-[#121c24]">
       <div className="flex justify-center w-full h-full p-4">
         <div className="container  w-full pt-4 pb-4">
-          <div className="card lg:card-side bg-base-100 shadow-xl">
+          <div className="card lg:card-side bg-base-100 shadow-xl dark:bg-[#fff] dark:text-[#121c24]">
             <figure>
               <img
                 src="/profile/letsConnect.png"

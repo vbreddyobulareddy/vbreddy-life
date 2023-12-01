@@ -39,7 +39,7 @@ const ResumeDownloadComponent = () => {
           />
           <button
             disabled={isInvalid}
-            className="btn btn-primary join-item rounded-r-full dark:text-[#fff]"
+            className="btn btn-primary join-item rounded-r-full dark:text-[#fff] dark:disabled:text-[#fff]"
           >
             Resume Download
           </button>

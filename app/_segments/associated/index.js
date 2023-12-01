@@ -4,7 +4,7 @@ export default function AssociatedSegment(props) {
   console.log("--==AssociatedSegment ", props.connectionsInfo);
   return (
     <>
-      <section className="mt-[2rem]">
+      <section className="mt-[2rem] dark:bg-[#fff] dark:text-[#121c24]">
         <div className="flex justify-center w-full p-4">
           <div className="container w-full">
             <div class="flex items-center">

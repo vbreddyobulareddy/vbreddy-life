@@ -13,7 +13,7 @@ const RootPage = async (props) => {
   const {data} = await getAllConnections();
   console.log("--==getConnections", data);
   return (
-    <>
+    <div className="dark:bg-[#fff] dark:text-[#121c24]">
       <HeroSegment></HeroSegment>
       <SkillsSegment></SkillsSegment>
       <StartupSegment></StartupSegment>
@@ -21,7 +21,7 @@ const RootPage = async (props) => {
       <MentorshipSegment></MentorshipSegment>
       <AssociatedSegment connectionsInfo={data} />
       <FooterSegment></FooterSegment>
-    </>
+    </div>
   );
 };
 
