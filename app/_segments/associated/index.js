@@ -7,31 +7,31 @@ export default function AssociatedSegment(props) {
       <section className="mt-[2rem] dark:bg-[#fff] dark:text-[#121c24]">
         <div className="flex justify-center w-full p-4">
           <div className="container w-full">
-            <div class="flex items-center">
-              <span class="pr-6 font-patrickhand text-[1rem]">
+            <div className="flex items-center">
+              <span className="pr-6 font-patrickhand text-[1rem]">
                 Reality @ {`<VBReddy />`}...
               </span>
-              <span class="h-px flex-1 bg-black"></span>
+              <span className="h-px flex-1 bg-black"></span>
             </div>
 
             <div className="flex flex-col items-center justify-center m-4">
               <div className="flex flex-col items-center justify-center">
-                <section class="bg-white">
-                  <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                <section className="bg-white">
+                  <div className="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -39,7 +39,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -47,7 +47,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -55,7 +55,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -63,7 +63,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -71,13 +71,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit, amet consectetur adipisicing
                           elit. Culpa sit rerum incidunt, a consequuntur
                           recusandae ab saepe illo est quia obcaecati neque
@@ -87,20 +87,20 @@ export default function AssociatedSegment(props) {
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -108,7 +108,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -116,7 +116,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -124,7 +124,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -132,7 +132,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -140,13 +140,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit, amet consectetur adipisicing
                           elit. Ad mollitia rerum quo unde neque atque molestias
                           quas pariatur! Sint, maxime?
@@ -154,20 +154,20 @@ export default function AssociatedSegment(props) {
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -175,7 +175,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -183,7 +183,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -191,7 +191,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -199,7 +199,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -207,13 +207,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Reprehenderit esse delectus, maiores fugit,
                           reiciendis culpa inventore sint accusantium libero
@@ -223,20 +223,20 @@ export default function AssociatedSegment(props) {
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -244,7 +244,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -252,7 +252,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -260,7 +260,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -268,7 +268,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -276,33 +276,33 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Fugit, fuga?
                         </p>
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -310,7 +310,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -318,7 +318,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -326,7 +326,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -334,7 +334,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -342,13 +342,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit amet consectetur, adipisicing
                           elit. Cupiditate officia natus blanditiis rerum
                           incidunt ex autem repudiandae doloribus eveniet quia?
@@ -361,20 +361,20 @@ export default function AssociatedSegment(props) {
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -382,7 +382,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -390,7 +390,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -398,7 +398,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -406,7 +406,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -414,13 +414,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Non, rerum. Nobis laborum praesentium
                           necessitatibus vero.
@@ -428,20 +428,20 @@ export default function AssociatedSegment(props) {
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -449,7 +449,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -457,7 +457,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -465,7 +465,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -473,7 +473,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -481,13 +481,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Maiores quaerat quasi ipsa repellendus quam!
                           Beatae pariatur quia distinctio fugit repellendus
@@ -496,20 +496,20 @@ export default function AssociatedSegment(props) {
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -517,7 +517,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -525,7 +525,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -533,7 +533,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -541,7 +541,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -549,33 +549,33 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit, amet consectetur adipisicing
                           elit. Sit, modi!
                         </p>
                       </blockquote>
                     </div>
 
-                    <div class="mb-8 sm:break-inside-avoid">
-                      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
+                    <div className="mb-8 sm:break-inside-avoid">
+                      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div className="flex items-center gap-4">
                           <img
                             alt="Man"
                             src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                            class="h-14 w-14 rounded-full object-cover"
+                            className="h-14 w-14 rounded-full object-cover"
                           />
 
                           <div>
-                            <div class="flex justify-center gap-0.5 text-green-500">
+                            <div className="flex justify-center gap-0.5 text-green-500">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -583,7 +583,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -591,7 +591,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -599,7 +599,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -607,7 +607,7 @@ export default function AssociatedSegment(props) {
                               </svg>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
+                                className="h-5 w-5"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                               >
@@ -615,13 +615,13 @@ export default function AssociatedSegment(props) {
                               </svg>
                             </div>
 
-                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                            <p className="mt-0.5 text-lg font-medium text-gray-900">
                               Paul Starr
                             </p>
                           </div>
                         </div>
 
-                        <p class="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-700">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Ullam numquam, unde molestiae commodi temporibus
                           dicta.

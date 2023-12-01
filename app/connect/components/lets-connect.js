@@ -1,18 +1,46 @@
 "use client";
 import * as yup from "yup";
 import { useFormik } from "formik";
-import { useState } from "react";
+
+import graphQLClientIns from "@/app/lib/graphQL-client";
+import { gql } from "graphql-request";
+
+const mutateNewConnection = gql`
+  mutation addNewConnect(
+    $name: String!
+    $email: String!
+    $mobile: String
+    $comment: String!
+  ) {
+    addNewConnect(
+      name: $name
+      email: $email
+      mobile: $mobile
+      comment: $comment
+    ) {
+      id
+      name
+    }
+  }
+`;
+
 const LetsConnectComponent = () => {
-  const [submitted, setSubmitted] = useState(false);
   const formik = useFormik({
     initialValues: {
       email: "",
       name: "",
       mobile: "",
-      context: "",
+      comment: "",
     },
-    onSubmit: () => {
-      setSubmitted(true);
+    onSubmit: async (payload) => {
+      console.log("--onSubmit=", payload);
+      const data = await graphQLClientIns.request(mutateNewConnection, {
+        name: payload.name,
+        email: payload.email,
+        mobile: payload.mobile,
+        comment: payload.comment,
+      });
+      console.log(data);
     },
     validationSchema: yup.object({
       name: yup.string().trim().required("Name is required"),
@@ -20,15 +48,16 @@ const LetsConnectComponent = () => {
         .string()
         .email("Must be a valid email")
         .required("Email is required"),
-      context: yup.string().required("Please give the context"),
+      comment: yup.string().required("Please give the comment"),
     }),
   });
+  console.log("--==LetsConnectComponent ", formik);
   return (
     <>
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="name"
-          class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+          className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <input
             type="text"
@@ -38,10 +67,10 @@ const LetsConnectComponent = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             placeholder="Name"
-            class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+            className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
           />
 
-          <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+          <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
             Name
           </span>
         </label>
@@ -54,7 +83,7 @@ const LetsConnectComponent = () => {
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="email"
-          class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+          className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <input
             type="email"
@@ -64,10 +93,10 @@ const LetsConnectComponent = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             placeholder="Email"
-            class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+            className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
           />
 
-          <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+          <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
             Email
           </span>
         </label>
@@ -80,7 +109,7 @@ const LetsConnectComponent = () => {
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
           for="mobile"
-          class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+          className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <input
             type="text"
@@ -90,10 +119,10 @@ const LetsConnectComponent = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             placeholder="Mobile"
-            class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+            className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
           />
 
-          <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+          <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
             Mobile
           </span>
         </label>
@@ -105,26 +134,26 @@ const LetsConnectComponent = () => {
       </div>
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
-          for="context"
-          class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+          for="comment"
+          className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <textarea
-            placeholder="context"
-            class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
-            id="context"
-            name="context"
-            value={formik.values.context}
+            placeholder="comment"
+            className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm pt-3"
+            id="comment"
+            name="comment"
+            value={formik.values.comment}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
 
-          <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-            context
+          <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+            Comment
           </span>
         </label>
         <label className="label">
           <span className="font-eurostile text-[#dc3545] label-text-alt">
-            {formik?.errors?.context}
+            {formik?.errors?.comment}
           </span>
         </label>
       </div>
@@ -139,12 +168,14 @@ const LetsConnectComponent = () => {
             </a>
           </div>
           <button
+            type="button"
             className="btn btn-primary w-1/2 dark:disabled:text-[#fff] dark:text-[#fff] dark:hover:text-[#fff]"
             disabled={
               !formik.isValid ||
               Object.keys(formik.touched).length === 0 ||
               Object.keys(formik.errors).length > 0
             }
+            onClick={formik.handleSubmit}
           >
             Submit
           </button>
