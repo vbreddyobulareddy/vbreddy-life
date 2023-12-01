@@ -1,6 +1,7 @@
 "use client";
 import * as yup from "yup";
 import { useFormik } from "formik";
+import { useRouter } from "next/navigation";
 
 import graphQLClientIns from "@/app/lib/graphQL-client";
 import { gql } from "graphql-request";
@@ -25,6 +26,7 @@ const mutateNewConnection = gql`
 `;
 
 const LetsConnectComponent = () => {
+  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -41,6 +43,7 @@ const LetsConnectComponent = () => {
         comment: payload.comment,
       });
       console.log(data);
+      router.push("/");
     },
     validationSchema: yup.object({
       name: yup.string().trim().required("Name is required"),
@@ -56,7 +59,7 @@ const LetsConnectComponent = () => {
     <>
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
-          for="name"
+          htmlFor="name"
           className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <input
@@ -82,7 +85,7 @@ const LetsConnectComponent = () => {
       </div>
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
-          for="email"
+          htmlFor="email"
           className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <input
@@ -108,7 +111,7 @@ const LetsConnectComponent = () => {
       </div>
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
-          for="mobile"
+          htmlFor="mobile"
           className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <input
@@ -134,7 +137,7 @@ const LetsConnectComponent = () => {
       </div>
       <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
         <label
-          for="comment"
+          htmlFor="comment"
           className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
         >
           <textarea
