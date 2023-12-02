@@ -9,9 +9,8 @@ const FrontendSkills = () => {
             <img src="/profile/frontend_ui.png" className="w-28 h-28" />
           </div>
           <div className="flex justify-center">
-            <p className="text-gray-800 sm:text-xl dark:text-white font-eurostile">
-              I'am a creative and detail-oriented{" "}
-              <span className="text-[#121c24]">Frontend Developer</span> with 8
+            <p className="sm:text-xl font-eurostile">
+              I'am a creative and detail-oriented Frontend Developer with 8
               years of experience in designing and implementing responsive and
               intuitive user interfaces.
             </p>
@@ -76,6 +75,11 @@ const FrontendSkills = () => {
                 className: "font-eurostile text-[20px] text-[#000]",
               },
               items: [
+                {
+                  title: "GraphQL-Request",
+                  className: "badge bg-[#121c24] text-white",
+                  rating: 3,
+                },
                 {
                   title: "Apollo-Client",
                   className: "badge bg-[#121c24] text-white",

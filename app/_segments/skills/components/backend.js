@@ -9,14 +9,11 @@ const BackendSkills = () => {
             <img src="/profile/backend_api.png" className="w-28 h-28" />
           </div>
           <div className="flex justify-center">
-            <p className="text-gray-800 sm:text-xl dark:text-white font-eurostile">
-              I'am a highly skilled{" "}
-              <span className="text-[#121c24]">
-                Javascript backend developer
-              </span>{" "}
-              with 8 years of experience in designing and implementing
-              server-side logic, databases, and APIs. I have hands on
-              experience with GraphQL restful service development.
+            <p className="sm:text-xl font-eurostile">
+              I'am a highly skilled Javascript backend developer with 8 years of
+              experience in designing and implementing server-side logic,
+              databases, and APIs. I have hands on experience with GraphQL
+              restful service development.
             </p>
           </div>
         </div>

@@ -34,7 +34,7 @@ const StartupSegment = () => {
                   href="https://github.com/vbreddyobulareddy/vbreddy-life"
                   target="_blank"
                 >
-                  App Repo: Next.JS(v14) + React.JS + Apollo-Client
+                  App Repo: Next.JS(v14) + React.JS + GraphQL-Request
                 </a>
                 <a
                   className="btn m-2"

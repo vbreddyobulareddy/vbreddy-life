@@ -1,4 +1,3 @@
-import { getAllConnections } from "./_client-service/connectUsService";
 import AssociatedSegment from "./_segments/associated";
 import ExperienceSegment from "./_segments/expirence";
 import FooterSegment from "./_segments/footer";
@@ -8,10 +7,7 @@ import SkillsSegment from "./_segments/skills";
 import StartupSegment from "./_segments/startups";
 
 
-const RootPage = async (props) => {
-  console.log("--==RootPage", props);
-  const {data} = await getAllConnections();
-  console.log("--==getConnections", data);
+const RootPage = async () => {
   return (
     <div className="dark:bg-[#fff] dark:text-[#121c24]">
       <HeroSegment></HeroSegment>
@@ -19,7 +15,7 @@ const RootPage = async (props) => {
       <StartupSegment></StartupSegment>
       <ExperienceSegment></ExperienceSegment>
       <MentorshipSegment></MentorshipSegment>
-      <AssociatedSegment connectionsInfo={data} />
+      <AssociatedSegment />
       <FooterSegment></FooterSegment>
     </div>
   );
