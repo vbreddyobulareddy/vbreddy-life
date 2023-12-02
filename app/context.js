@@ -58,7 +58,7 @@ const ContextEntityProvider = ({ children }) => {
           {state.toast.map((rec) => {
             popToaster(rec);
             return (
-              <div className="toast toast-top toast-end">
+              <div className="toast toast-top toast-end" key={rec.id}>
                 <div className={`alert ${rec.type || "alert-info"}`}>
                   <span>{rec.message}</span>
                 </div>
