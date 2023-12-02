@@ -1,14 +1,15 @@
 "use client";
 import * as yup from "yup";
 import { useFormik } from "formik";
-import { useRouter } from "next/navigation";
 
 import { postMutationOfConnection } from "@/app/_client-service/connectUsService";
-import { useState } from "react";
+import { useContext } from "react";
+import { ContextEntity } from "@/app/context";
 
 const LetsConnectComponent = () => {
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
+  const contextProviderEntity = useContext(ContextEntity);
+
+  console.log("--==contextProviderEntity ", contextProviderEntity);
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -17,17 +18,22 @@ const LetsConnectComponent = () => {
       comment: "",
     },
     onSubmit: async (payload) => {
-      setLoading(true);
+      contextProviderEntity.setLoading(true);
       const { addNewConnect } = await postMutationOfConnection({
         name: payload.name,
         email: payload.email,
         mobile: payload.mobile,
         comment: payload.comment,
       });
-      setLoading(false);
-      if (addNewConnect.id) {
-        router.push("/");
-      }
+      contextProviderEntity.setLoading(false);
+      contextProviderEntity.toastNavigation({
+        path: "/",
+        data: {
+          ...addNewConnect,
+          message: `Thanks for joining. I will get back to you ${addNewConnect.name}`,
+          type: "alert-primary",
+        },
+      });
     },
     validationSchema: yup.object({
       name: yup.string().trim().required("Name is required"),
@@ -41,11 +47,6 @@ const LetsConnectComponent = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center m-4 p-4 w-full relative">
-        {loading && (
-          <div className="flex items-center justify-center w-full h-full z-[9999] absolute bg-[rgba(255,255,255,0.7)]">
-            <span class="loading loading-spinner loading-lg"></span>
-          </div>
-        )}
         <div className="form-control w-full m-2 dark:bg-[#fff] dark:text-[#121c24]">
           <label
             htmlFor="name"

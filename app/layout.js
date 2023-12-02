@@ -1,21 +1,16 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-import ProfileNav from './_components/navs/profileNav'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'VBReddy',
-  description: 'Veera Bhargava Reddy.Obulareddy',
-}
+import "./globals.css";
+import ProfileNav from "./_components/navs/profileNav";
+import ContextEntityProvider from "./context";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="dark:bg-[#fff] dark:text-[#121c24] h-screen">
-        <ProfileNav></ProfileNav>
-        {children}
+        <ContextEntityProvider>
+          <ProfileNav></ProfileNav>
+          {children}
+        </ContextEntityProvider>
       </body>
     </html>
-  )
+  );
 }
