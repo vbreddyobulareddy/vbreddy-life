@@ -15,7 +15,7 @@ const RootPage = async () => {
       <StartupSegment></StartupSegment>
       <ExperienceSegment></ExperienceSegment>
       <MentorshipSegment></MentorshipSegment>
-      <AssociatedSegment />
+      {/* <AssociatedSegment /> */}
       <FooterSegment></FooterSegment>
     </div>
   );

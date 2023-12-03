@@ -33,6 +33,20 @@ const ContextEntityProvider = ({ children }) => {
     }, 1000);
   };
 
+  const toastMessage = (attr) => {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        toast: [
+          {
+            id: new Date().getTime() + Math.random(),
+            message: attr.message,
+          },
+        ],
+      };
+    });
+  };
+
   const popToaster = (record) => {
     setTimeout(() => {
       const temp = state.toast.filter((item) => item.id !== record.id);
@@ -47,7 +61,7 @@ const ContextEntityProvider = ({ children }) => {
   return (
     <>
       <ContextEntity.Provider
-        value={{ state, setState, setLoading, toastNavigation }}
+        value={{ state, setState, setLoading, toastNavigation, toastMessage }}
       >
         <div className="flex flex-col items-center justify-center w-full relative">
           {state.loading && (
@@ -55,10 +69,15 @@ const ContextEntityProvider = ({ children }) => {
               <span className="loading loading-spinner loading-lg"></span>
             </div>
           )}
+          {/* <div className="toast toast-top toast-end z-50 m-4 p-4">
+            <div className={`alert alert-info text-white text-sm max-w-sm h-fit`}>
+              <p className="break-all h-fit w-full">Resume sent successfully</p>
+            </div>
+          </div> */}
           {state.toast.map((rec) => {
             popToaster(rec);
             return (
-              <div className="toast toast-top toast-end" key={rec.id}>
+              <div className="toast toast-top toast-end z-50 m-4 p-4" key={rec.id}>
                 <div className={`alert ${rec.type || "alert-info"}`}>
                   <span>{rec.message}</span>
                 </div>

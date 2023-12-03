@@ -1,15 +1,25 @@
 "use client";
 import * as yup from "yup";
 import { useFormik } from "formik";
-import { useState } from "react";
+import { postMutationOfResumeContacts } from "@/app/_client-service/resumeContacts";
+import { useContext } from "react";
+import { ContextEntity } from "@/app/context";
+
 const ResumeDownloadComponent = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const contextProviderEntity = useContext(ContextEntity);
   const formik = useFormik({
     initialValues: {
       email: "",
     },
-    onSubmit: () => {
-      setSubmitted(true);
+    onSubmit: async (payload) => {
+      console.log("---== Send Resume ==--");
+      contextProviderEntity.setLoading(true);
+      await postMutationOfResumeContacts({ email: payload.email });
+      contextProviderEntity.setLoading(false);
+      contextProviderEntity.toastMessage({
+        message: `Resume sent successfully`,
+        type: "alert-info",
+      });
     },
     validationSchema: yup.object({
       email: yup
@@ -39,9 +49,10 @@ const ResumeDownloadComponent = () => {
           />
           <button
             disabled={isInvalid}
+            onClick={formik.handleSubmit}
             className="btn btn-primary join-item rounded-r-full dark:text-[#fff] dark:disabled:text-[#fff]"
           >
-            Resume Download
+            Send Resume.
           </button>
         </div>
       </div>
