@@ -10,7 +10,7 @@ const BackendSkills = () => {
           </div>
           <div className="flex justify-center">
             <p className="sm:text-xl font-eurostile">
-              I'am a highly skilled Javascript backend developer with 8 years of
+              I'am a highly skilled Javascript backend developer with 10 years of
               experience in designing and implementing server-side logic,
               databases, and APIs. I have hands on experience with GraphQL
               restful service development.

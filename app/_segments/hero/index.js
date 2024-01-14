@@ -23,7 +23,7 @@ export default function HeroSegment(props) {
                 Hi, I'm VBReddy. Nice to meet you.
               </h1>
               <h2 className="tracking-wide leading-6 text-[20px] text-center mt-2">
-                Since beginning my journey as a javascript developer over 8
+                Since beginning my journey as a javascript developer over 10
                 years ago, I've done remote work for agencies, consulted for
                 startups, and collaborated with talented people to create
                 digital products for both business and consumer use. I'm quietly

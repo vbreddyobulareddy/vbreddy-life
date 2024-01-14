@@ -10,7 +10,7 @@ const FrontendSkills = () => {
           </div>
           <div className="flex justify-center">
             <p className="sm:text-xl font-eurostile">
-              I'am a creative and detail-oriented Frontend Developer with 8
+              I'am a creative and detail-oriented Frontend Developer with 10
               years of experience in designing and implementing responsive and
               intuitive user interfaces.
             </p>

@@ -1,10 +1,11 @@
 import React from "react";
+import moment from "moment";
 
 const ExperienceSegment = () => {
-  function diff_months(dt2, dt1) {
-    var diff = (dt2.getTime() - dt1.getTime()) / 1000;
-    diff /= 60 * 60 * 24 * 7 * 4;
-    return Math.abs(Math.round(diff));
+  function diff_months(from, to) {
+    const numberOfMonths = moment(new Date(to)).diff(new Date(from), 'months', true);
+    console.log('--==numberOfMonths ', numberOfMonths);
+    return Math.round(numberOfMonths);
   }
   return (
     <>
@@ -17,6 +18,12 @@ const ExperienceSegment = () => {
           </div>
           <div className="flex justify-center items-center flex-wrap">
             {[
+              {
+                companyName: "daVIZta Inc",
+                url: "https://www.integrichain.com/news/integrichain-and-davizta-merge/",
+                from: new Date(2013, 5, 1),
+                to: new Date(2014, 12, 30),
+              },
               {
                 companyName: "Wipro",
                 url: "https://www.wipro.com/",
