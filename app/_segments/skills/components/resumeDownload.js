@@ -1,11 +1,13 @@
 "use client";
+import React from "react";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import { postMutationOfResumeContacts } from "@/app/_client-service/resumeContacts";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ContextEntity } from "@/app/context";
 
 const ResumeDownloadComponent = () => {
+  const [isInvalid, setInvalid] = React.useState(false);
   const contextProviderEntity = useContext(ContextEntity);
   const formik = useFormik({
     initialValues: {
@@ -28,10 +30,20 @@ const ResumeDownloadComponent = () => {
         .required("Email is required"),
     }),
   });
-  const isInvalid =
-    !formik.isValid ||
-    Object.keys(formik.touched).length === 0 ||
-    Object.keys(formik.errors).length > 0;
+
+  const handleOnChangeEvent = (e) => {
+    formik.validateField("email");
+    formik.setTouched("email");
+    formik.handleChange(e);
+  };
+
+  useEffect(() => {
+    const { touched, errors } = formik;
+    const isInvalidFlag =
+      Object.keys(touched).length === 0 || Object.keys(errors).length > 0;
+    setInvalid(isInvalidFlag);
+  }, [formik]);
+
   return (
     <>
       <div className="flex justify-center mt-4 pt-4 w-full dark:bg-[#fff] dark:text-[#121c24]">
@@ -40,12 +52,11 @@ const ResumeDownloadComponent = () => {
             className={`input input-bordered join-item w-full ${
               formik?.errors?.email ? "border-[#dc3545]" : ""
             }  dark:bg-[#fff] dark:text-[#121c24]`}
-            placeholder="Enter your email"
+            placeholder="Please enter your email, <VBReddy /> will drop the resume"
             id="email"
             name="email"
             value={formik.values.email}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
+            onChange={handleOnChangeEvent}
           />
           <button
             disabled={isInvalid}

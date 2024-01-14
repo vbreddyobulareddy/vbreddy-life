@@ -4,7 +4,6 @@ import moment from "moment";
 const ExperienceSegment = () => {
   function diff_months(from, to) {
     const numberOfMonths = moment(new Date(to)).diff(new Date(from), 'months', true);
-    console.log('--==numberOfMonths ', numberOfMonths);
     return Math.round(numberOfMonths);
   }
   return (
