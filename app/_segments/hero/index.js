@@ -31,7 +31,7 @@ export default function HeroSegment(props) {
                 improving my chops one design problem at a time.
               </h2>
               <div className="flex justify-center">
-                <Link
+                {/* <Link
                   href="/connect"
                   className="font-eurostile btn btn-wide bg-[#0077b5] btn-md m-4 text-lg text-white border-[#0077b5] hover:bg-[#0077b5] hover:border-[#0077b5]"
                 >
@@ -47,7 +47,7 @@ export default function HeroSegment(props) {
                   <div class="outline-none mr-1 mb-1 px-3 py-1 bg-transprent text-xs font-bold text-white uppercase focus:outline-none">
                     Linked In
                   </div>
-                </Link>
+                </Link> */}
                 <Link
                   href="/connect"
                   className="font-eurostile btn btn-wide btn-primary btn-md m-4 text-white text-lg"
